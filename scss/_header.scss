@@ -1,19 +1,27 @@
-header{
+.header{
   background-color: #fff;
   position: fixed;
   width: 100%;
   height: 100px;
+  &__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1220px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    &-right{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__logo{
+    width: 100px;
+    height: 100%;
+  }
 }
-.header__container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 1220px;
-  height: 100px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-.header__logo{
-  width: 100px;
-  height: 100px;
-}
+
+@import "menu";
+@import "burger";

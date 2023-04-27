@@ -1,0 +1,19 @@
+.burger{
+  display: none;
+  background-color: #337ab7;
+  width: 42px;
+  height: 32px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  .burger__line {
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px 10px 0 10px;
+
+    &:first-child{
+      margin-top: 9px;
+    }
+  }
+}

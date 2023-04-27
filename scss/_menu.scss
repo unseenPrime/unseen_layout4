@@ -1,1 +1,53 @@
-//_header.scss
+$btn-bg-color:#337ab7;
+$btn-text-color:#ffffff;
+
+.menu {
+  background-color: $btn-text-color;
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      margin-left: 8px;
+      justify-content: center;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        width: 140px;
+        height: 40px;
+        background-color: $btn-bg-color;
+        border-radius: 30px;
+
+        a {
+          color: $btn-text-color;
+
+          &:hover{
+            color: $btn-text-color;
+          }
+        }
+
+        &:hover {
+          background-color: darken($btn-bg-color, 10%);
+        }
+      }
+
+      a {
+
+        color: #666666;
+        &:hover{
+          color: $btn-bg-color;
+        }
+      }
+
+      &:hover {
+        background-color: darken(#f7f7f7, 1%);
+      }
+    }
+  }
+}
