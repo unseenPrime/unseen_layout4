@@ -1,1 +1,17 @@
-@import "statement";
+.content{
+  padding-top: 100px;
+  height: 765px;
+  width: 100%;
+  background-color: #f7f7f7;
+
+  &__container{
+    height: 100%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 15px;
+
+    &-left{
+      width: 600px;
+    }
+  }
+}
