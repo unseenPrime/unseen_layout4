@@ -171,13 +171,97 @@ body, h1, h2, h3, h4, h5, h6, p, div {
   background-color: #f7f7f7;
 }
 .content__container {
+  display: flex;
+  flex-direction: row;
   height: 100%;
   max-width: 1250px;
   margin: auto;
   padding: 0 15px;
 }
 .content__container-left {
-  width: 600px;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 215px 0 0 37px;
+}
+.content__container-left h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.content__container-left p {
+  width: 500px;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 32px;
+  font-weight: 100;
+  text-align: center;
+  margin: 35px 0 0 18px;
+}
+.content__container-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 345px;
+  margin: 55px 0 0 58px;
+}
+.content__container-right .content__title {
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.content__container-right .form__submit {
+  height: 50px;
+  width: 370px;
+  border-radius: 25px;
+  color: white;
+  background-color: #337ab7;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 1000;
+  text-transform: uppercase;
+  margin: 29px 0 0 110px;
+}
+.content__container-right .form__field {
+  width: 590px;
+  height: 85px;
+}
+.content__container-right .form__field:nth-child(6) {
+  margin-top: 15px;
+  height: -moz-max-content;
+  height: max-content;
+}
+.content__container-right .form__label {
+  display: flex;
+  align-items: center;
+  margin: 1px 0 5px 0;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+.content__container-right .form__label.first {
+  margin-top: 10px;
+}
+.content__container-right .form__input {
+  min-width: 590px;
+  height: 50px;
+  border: #bababa 1px solid;
+  border-radius: 5px;
+}
+.content__container-right .form__star {
+  color: red;
+  padding: 6px 0 0 1px;
+}
+.content__container-right .form__checkbox {
+  display: flex;
+}
+.content__container-right .form__checkbox-text {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+  font-size: 14px;
+  margin-left: 7px;
+}
+.content__container-right .form__checkbox-text a {
+  padding: 0 2px;
 }
 
 @media (max-width: 768px) {

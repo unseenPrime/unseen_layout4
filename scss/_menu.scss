@@ -1,6 +1,3 @@
-$btn-bg-color:#337ab7;
-$btn-text-color:#ffffff;
-
 .menu {
   background-color: $btn-text-color;
   ul {
@@ -21,7 +18,7 @@ $btn-text-color:#ffffff;
       &:last-child {
         width: 140px;
         height: 40px;
-        background-color: $btn-bg-color;
+        background-color: $btn-color-blue;
         border-radius: 30px;
 
         a {
@@ -33,7 +30,7 @@ $btn-text-color:#ffffff;
         }
 
         &:hover {
-          background-color: darken($btn-bg-color, 10%);
+          background-color: darken($btn-color-blue, 10%);
         }
       }
 
@@ -41,7 +38,7 @@ $btn-text-color:#ffffff;
         font-size: 15px;
         color: #666666;
         &:hover{
-          color: $btn-bg-color;
+          color: $btn-color-blue;
         }
       }
 

@@ -52,7 +52,36 @@
             </p>
         </div>
         <div class="content__container-right">
-
+            <h2 class="content__title">Зареєструватися на курси</h2>
+            <form action="/register" method="post" class="form">
+                <div class="form__field">
+                    <label class="form__label first" for="name">Ім'я<span class="form__star">*</span></label>
+                    <input class="form__input" type="text" id="name" name="name" required>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="surname">Прізвище<span class="form__star">*</span></label>
+                    <input class="form__input" type="text" id="surname" name="surname" required>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="interest">Мене більше цікавить<span class="form__star">*</span></label>
+                    <input class="form__input" type="text" id="interest" name="interest" required>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="phone">Номер телефону<span class="form__star">*</span></label>
+                    <input class="form__input" type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="email">Email<span class="form__star">*</span></label>
+                    <input class="form__input" type="email" id="email" name="email" required>
+                </div>
+                <div class="form__field">
+                    <label class="form__checkbox">
+                        <input class="form__checkbox-input" type="checkbox" name="agree" required>
+                        <span class="form__checkbox-text">Я погоджуюся із <a href="#">Політикою Конфіденційності</a><span class="form__star">*</span></span>
+                    </label>
+                </div>
+                <button class="form__submit" type="submit">Зареєструватися зараз</button>
+            </form>
         </div>
     </div>
 </div>

@@ -5,13 +5,101 @@
   background-color: #f7f7f7;
 
   &__container{
+    display: flex;
+    flex-direction: row;
     height: 100%;
     max-width: 1250px;
     margin: auto;
     padding: 0 15px;
 
     &-left{
-      width: 600px;
+      width: max-content;
+      margin: 215px 0 0 37px;
+
+      h1{
+        font-size: 35px;
+        letter-spacing: 1px;
+      }
+      p{
+        width: 500px;
+        font-size: 18px;
+        letter-spacing:0;
+        line-height: 32px;
+        font-weight: 100;
+        text-align: center;
+        margin: 35px 0 0 18px;
+      }
+    }
+    &-right{
+      display: flex;
+      flex-direction: column;
+      max-width: 345px;
+      margin: 55px 0 0 58px;
+
+      .content__title{
+        letter-spacing: 2px;
+        font-size: 20px;
+      }
+
+      .form{
+        &__submit{
+          height: 50px;
+          width: 370px;
+          border-radius: 25px;
+          color: white;
+          background-color: $btn-color-blue;
+          font-size: 13px;
+          letter-spacing: 1px;
+          font-weight: 1000;
+          text-transform: uppercase;
+          margin: 29px 0 0 110px;
+        }
+        &__field{
+          width: 590px;
+          height: 85px;
+
+          &:nth-child(6){
+            margin-top: 15px;
+            height: max-content;
+          }
+        }
+        &__label{
+          display: flex;
+          align-items: center;
+          margin: 1px 0 5px 0;
+          height: max-content;
+          font-size: 15px;
+          letter-spacing: 0;
+
+          &.first{
+            margin-top: 10px;
+          }
+        }
+        &__input{
+          min-width: 590px;
+          height: 50px;
+          border: #bababa 1px solid;
+          border-radius: 5px;
+        }
+        &__star{
+          color: red;
+          padding: 6px 0 0 1px;
+        }
+        &__checkbox{
+          display: flex;
+          &-text{
+            display: flex;
+            width: max-content;
+            align-items: center;
+            font-size: 14px;
+            margin-left: 7px;
+
+            a{
+              padding: 0 2px;
+            }
+          }
+        }
+      }
     }
   }
 }
