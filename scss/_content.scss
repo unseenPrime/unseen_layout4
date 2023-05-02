@@ -11,7 +11,7 @@
     max-width: 1250px;
     margin: auto;
     padding: 0 15px;
-
+    //Left block
     &-left{
       width: 50%;
       margin: 215px 0 0 37px;
@@ -33,6 +33,7 @@
         margin: 22px 0 0 18px;
       }
     }
+    //Right block
     &-right{
       display: flex;
       flex-direction: column;
@@ -44,7 +45,7 @@
         letter-spacing: 2px;
         font-size: 20px;
       }
-
+      //Form registration
       .form{
         display: flex;
         align-items: center;
@@ -73,6 +74,11 @@
             margin-top: 15px;
             height: max-content;
           }
+          img{
+            width: 7px;
+            height: 7px;
+            margin-left: 3px;
+          }
         }
         &__label{
           display: flex;
@@ -93,6 +99,14 @@
           border: #bababa 1px solid;
           border-radius: 5px;
           padding: 10px;
+
+          &:focus{
+            border: 1px solid #66afe9;
+            box-shadow: 0 0 5px 0 #66afe9;
+            &::placeholder{
+              color: $btn-text-color;
+            }
+          }
         }
         &__star{
           color: red;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>maket 4</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 </head>
 <body>
 <!--Header-->
@@ -24,7 +25,7 @@
         <div class="menu">
             <ul>
                 <li><a href="#" class="menu__link">Головна</a></li>
-                <li><a href="#" class="menu__link">Програма курсу</a></li>
+                <li><a href="#course-program" class="menu__link">Програма курсу</a></li>
                 <li><a href="#" class="menu__link">Відгуки про курс</a></li>
                 <li><a href="#" class="menu__link">Відео</a></li>
                 <li><a href="#" class="menu__link">Ментори</a></li>
@@ -58,29 +59,29 @@
             <h2 class="content__title">Зареєструватися на курси</h2>
             <form action="/register" method="post" class="form">
                 <div class="form__field">
-                    <label class="form__label first" for="name">Ім'я<span class="form__star">*</span></label>
+                    <label class="form__label first" for="name">Ім'я<img src="img/icons/required.png" alt="required"></label>
                     <input class="form__input" type="text" id="name" name="name" placeholder="Ім'я" pattern="[A-Za-zА-Яа-яЁёЇїІіЄєҐґ]+" required>
                 </div>
                 <div class="form__field">
-                    <label class="form__label" for="surname">Прізвище<span class="form__star">*</span></label>
+                    <label class="form__label" for="surname">Прізвище<img src="img/icons/required.png" alt="required"></label>
                     <input class="form__input" type="text" id="surname" name="surname" placeholder="Прізвище" pattern="[A-Za-zА-Яа-яЁёЇїІіЄєҐґ]+"  required>
                 </div>
                 <div class="form__field">
-                    <label class="form__label" for="interest">Мене більше цікавить<span class="form__star">*</span></label>
+                    <label class="form__label" for="interest">Мене більше цікавить<img src="img/icons/required.png" alt="required"></label>
                     <input class="form__input" type="text" id="interest" name="interest" placeholder="developer or QA" required>
                 </div>
                 <div class="form__field">
-                    <label class="form__label" for="phone">Номер телефону<span class="form__star">*</span></label>
+                    <label class="form__label" for="phone">Номер телефону<img src="img/icons/required.png" alt="required"></label>
                     <input class="form__input" type="tel" id="phone" name="phone" placeholder="+380 XXX XX XX XXX" pattern="\+380[0-9]{9}" required>
                 </div>
                 <div class="form__field">
-                    <label class="form__label" for="email">Email<span class="form__star">*</span></label>
+                    <label class="form__label" for="email">Email<img src="img/icons/required.png" alt="required"></label>
                     <input class="form__input" type="email" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}" required>
                 </div>
                 <div class="form__field">
                     <label class="form__checkbox">
                         <input class="form__checkbox-input" type="checkbox" name="agree" required>
-                        <span class="form__checkbox-text">Я погоджуюся із <a href="#">Політикою Конфіденційності</a><span class="form__star">*</span></span>
+                        <span class="form__checkbox-text">Я погоджуюся із <a href="#">Політикою Конфіденційності</a><img src="img/icons/required.png" alt="required"></span>
                     </label>
                 </div>
                 <div class="form__submit">
@@ -91,7 +92,7 @@
     </div>
 </div>
 <!--Course block-->
-<div class="course">
+<div class="course" id="course-program">
     <div class="course__container">
         <div class="course__title">
             <h1>
@@ -99,7 +100,7 @@
             </h1>
         </div>
         <div class="course__content">
-            <div class="course__item course__item--wordpress">
+            <div class="course__item">
                 <div>
                     <img src="img/icons/course-icon-1.png" alt="course-icon">
                 </div>
@@ -113,7 +114,7 @@
                     </p>
                 </div>
             </div>
-            <div class="course__item course__item--drupal">
+            <div class="course__item">
                 <div>
                     <img src="img/icons/course-icon-2.png" alt="course-icon">
                 </div>
@@ -127,7 +128,7 @@
                     </p>
                 </div>
             </div>
-            <div class="course__item course__item--qa">
+            <div class="course__item">
                 <div>
                     <img src="img/icons/course-icon-3.png" alt="course-icon">
                 </div>
@@ -144,6 +145,11 @@
         </div>
     </div>
 </div>
+<!--Connect jQuery-->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!--Connect Slick-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!--Connect JS-->
 <script src="js/script.js"></script>
 </body>
 </html>
