@@ -78,7 +78,6 @@
 }
 @media (max-width: 1024px) {
   .content{
-    height: max-content;
     &__container{
       &-left{
         margin: 100px 0 0 0;
@@ -91,7 +90,7 @@
 }
 @media (max-width: 768px) {
   .content{
-    height: max-content;
+    height: 1130px;
     &__title{
       text-align: center;
     }
@@ -121,6 +120,11 @@
   }
 
 }
+@media (max-width: 500px) {
+  .content{
+    height: 1230px;
+  }
+}
 @media (max-width: 425px) {
   .content {
     &__container {
@@ -143,6 +147,7 @@
 }
 @media (max-width: 375px) {
   .content {
+    height: 1280px;
     &__container {
       &-left{
         p{
@@ -153,5 +158,10 @@
         }
       }
     }
+  }
+}
+@media (max-width: 320px) {
+  .content{
+    height: 1290px;
   }
 }

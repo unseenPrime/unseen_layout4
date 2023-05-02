@@ -196,7 +196,7 @@ body, h1, h2, h3, h4, h5, h6, p, div {
   line-height: 32px;
   font-weight: 100;
   text-align: center;
-  margin: 35px 0 0 18px;
+  margin: 22px 0 0 18px;
 }
 .content__container-right {
   display: flex;
@@ -219,7 +219,7 @@ body, h1, h2, h3, h4, h5, h6, p, div {
   height: 50px;
   width: 370px;
   border-radius: 25px;
-  color: white;
+  color: #ffffff;
   background-color: #337ab7;
   font-size: 13px;
   letter-spacing: 1px;
@@ -273,6 +273,50 @@ body, h1, h2, h3, h4, h5, h6, p, div {
 }
 .content__container-right .form__checkbox-text a {
   padding: 0 2px;
+}
+
+.course {
+  width: 100%;
+  height: 560px;
+  background-color: #ffffff;
+}
+.course__content {
+  display: flex;
+  flex-direction: row;
+}
+.course__container {
+  height: 100%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 15px;
+}
+.course__title {
+  width: 100%;
+  text-align: center;
+  padding: 80px 0 40px 0;
+}
+.course__title h1 {
+  font-size: 33px;
+  letter-spacing: 1.5px;
+}
+.course__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 375px;
+  margin: 0 15px 0 15px;
+}
+.course__subtitle {
+  text-align: center;
+  padding: 25px 0 21px 0;
+  font-size: 25px;
+  border-bottom: #3498db 1px solid;
+}
+.course__description {
+  text-align: center;
+  width: 345px;
+  padding-top: 27px;
+  line-height: 25px;
 }
 
 @media (max-width: 768px) {
@@ -338,10 +382,6 @@ body, h1, h2, h3, h4, h5, h6, p, div {
   }
 }
 @media (max-width: 1024px) {
-  .content {
-    height: -moz-max-content;
-    height: max-content;
-  }
   .content__container-left {
     margin: 100px 0 0 0;
     display: flex;
@@ -351,8 +391,7 @@ body, h1, h2, h3, h4, h5, h6, p, div {
 }
 @media (max-width: 768px) {
   .content {
-    height: -moz-max-content;
-    height: max-content;
+    height: 1130px;
   }
   .content__title {
     text-align: center;
@@ -381,6 +420,11 @@ body, h1, h2, h3, h4, h5, h6, p, div {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .content {
+    height: 1230px;
+  }
+}
 @media (max-width: 425px) {
   .content__container-left h1 {
     line-height: 35px;
@@ -390,11 +434,19 @@ body, h1, h2, h3, h4, h5, h6, p, div {
   }
 }
 @media (max-width: 375px) {
+  .content {
+    height: 1280px;
+  }
   .content__container-left p {
     font-size: 13px;
   }
   .content__container-left h1 {
     font-size: 23px;
+  }
+}
+@media (max-width: 320px) {
+  .content {
+    height: 1290px;
   }
 }
 /*# sourceMappingURL=style.css.map */
