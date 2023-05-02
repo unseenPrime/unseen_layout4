@@ -129,6 +129,15 @@
           line-height: 35px;
         }
       }
+      &-right{
+        .form{
+          &__submit{
+            &-btn{
+              width: 275px;
+            }
+          }
+        }
+      }
     }
   }
 }
