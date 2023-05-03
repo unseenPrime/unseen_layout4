@@ -25,6 +25,17 @@
     height: 80px;
   }
 }
+@media (max-width: 425px) {
+  .header{
+    height: 70px;
+    &__logo{
+      width: 60px;
+      height: 60px;
+      margin-top: 5px;
+    }
+  }
+}
+
 
 @import "menu";
 @import "burger";
